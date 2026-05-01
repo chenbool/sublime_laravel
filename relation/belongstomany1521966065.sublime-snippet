@@ -1,0 +1,9 @@
+<snippet>
+	<content><![CDATA[public function ${1:roles}()
+{
+    return \$this->belongsToMany(\App\Models\${2:Role}::class);
+}]]></content>
+	<scope>source.php</scope>
+	<tabTrigger>labelongstomany</tabTrigger>
+	<Laravel 多对多></parameter>
+</snippet>

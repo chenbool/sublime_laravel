@@ -1,0 +1,19 @@
+<snippet>
+	<content><![CDATA[<?php
+
+namespace App\Http\Middleware;
+
+use Closure;
+use Illuminate\Http\Request;
+
+class ${1:CheckAge}
+{
+    public function handle(Request \$request, Closure \$next)
+    {
+        return \$next(\$request);
+    }
+}]]></content>
+	<scope>source.php</scope>
+	<tabTrigger>lamiddleware</tabTrigger>
+	<Laravel 中间件></parameter>
+</snippet>

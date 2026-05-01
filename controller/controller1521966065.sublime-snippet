@@ -1,0 +1,38 @@
+<snippet>
+	<content><![CDATA[<?php
+
+namespace App\Http\Controllers;
+
+use Illuminate\Http\Request;
+
+class ${1:User}Controller extends Controller
+{
+    public function index()
+    {
+        return response()->json(['code' => 200, 'msg' => 'success']);
+    }
+
+    public function show(\$id)
+    {
+        return response()->json(['code' => 200, 'data' => [\$_id]]);
+    }
+
+    public function store(Request \$request)
+    {
+        return response()->json(['code' => 200, 'msg' => 'created']);
+    }
+
+    public function update(Request \$request, \$id)
+    {
+        return response()->json(['code' => 200, 'msg' => 'updated']);
+    }
+
+    public function destroy(\$id)
+    {
+        return response()->json(['code' => 200, 'msg' => 'deleted']);
+    }
+}]]></content>
+	<scope>source.php</scope>
+	<tabTrigger>lacontroller</tabTrigger>
+	<description>Laravel 控制器</description>
+</snippet>

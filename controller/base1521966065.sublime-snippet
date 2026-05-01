@@ -1,0 +1,16 @@
+<snippet>
+	<content><![CDATA[<?php
+
+namespace App\Http\Controllers;
+
+use Illuminate\Routing\Controller as BaseController;
+use Illuminate\Foundation\Validation\ValidatesRequests;
+
+class Controller extends BaseController
+{
+    use ValidatesRequests;
+}]]></content>
+	<scope>source.php</scope>
+	<tabTrigger>lacontrollerbase</tabTrigger>
+	<Laravel 基础控制器></parameter>
+</snippet>

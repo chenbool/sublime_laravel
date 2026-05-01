@@ -1,0 +1,9 @@
+<snippet>
+	<content><![CDATA[public function ${1:profile}()
+{
+    return \$this->hasOne(\App\Models\${2:Profile}::class);
+}]]></content>
+	<scope>source.php</scope>
+	<tabTrigger>lahasone</tabTrigger>
+	<Laravel 一对一></parameter>
+</snippet>

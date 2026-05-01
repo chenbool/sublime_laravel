@@ -1,0 +1,10 @@
+<snippet>
+	<content><![CDATA[use Illuminate\Support\Facades\Validator;
+Validator::make(\$request->all(), [
+    '${1:name}' => 'required|max:255',
+    '${2:email}' => 'required|email',
+]);]]></content>
+	<scope>source.php</scope>
+	<tabTrigger>lavalidate</tabTrigger>
+	<Laravel 验证器></parameter>
+</snippet>

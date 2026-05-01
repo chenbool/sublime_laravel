@@ -1,0 +1,19 @@
+<snippet>
+	<content><![CDATA[<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Model;
+
+class ${1:User} extends Model
+{
+    protected \$table = '${2:users}';
+    protected \$primaryKey = '${3:id}';
+    public \$timestamps = true;
+    protected \$fillable = [];
+    protected \$hidden = ['password'];
+}]]></content>
+	<scope>source.php</scope>
+	<tabTrigger>lamodel</tabTrigger>
+	<description>Laravel 模型</description>
+</snippet>

@@ -1,0 +1,9 @@
+<snippet>
+	<content><![CDATA[public function ${1:posts}()
+{
+    return \$this->morphMany(\App\Models\${2:Comment}::class, '${3:commentable}');
+}]]></content>
+	<scope>source.php</scope>
+	<tabTrigger>lamorphmany</tabTrigger>
+	<Laravel 多态关联></parameter>
+</snippet>

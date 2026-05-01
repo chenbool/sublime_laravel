@@ -1,0 +1,9 @@
+<snippet>
+	<content><![CDATA[Route::group(['prefix' => '${1:admin}'], function () {
+    Route::get('${2:dashboard}', '${3:DashboardController@index}')->name('${4:admin.dashboard}');
+    Route::resource('${5:users}', '${6:UserController}');
+});]]></content>
+	<scope>source.php</scope>
+	<tabTrigger>laroutegroup</tabTrigger>
+	<Laravel 路由组></parameter>
+</snippet>

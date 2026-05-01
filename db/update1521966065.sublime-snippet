@@ -1,0 +1,6 @@
+<snippet>
+	<content><![CDATA[${1:User}::where('${2:id}', ${3:1})->update(['${4:name}' => '${5:value}']);]]></content>
+	<scope>source.php</scope>
+	<tabTrigger>laupdate</tabTrigger>
+	<description>Laravel 更新数据</description>
+</snippet>

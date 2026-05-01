@@ -1,0 +1,29 @@
+<snippet>
+	<content><![CDATA[<?php
+
+namespace App\Mail;
+
+use Illuminate\Bus\Queueable;
+use Illuminate\Mail\Mailable;
+use Illuminate\Queue\SerializesModels;
+
+class ${1:SendMailable} extends Mailable
+{
+    use Queueable, SerializesModels;
+
+    public \$data;
+
+    public function __construct(\$data)
+    {
+        \$this->data = \$data;
+    }
+
+    public function build()
+    {
+        return \$this->view('${2:emails.name}')->with('data', \$this->data);
+    }
+}]]></content>
+	<scope>source.php</scope>
+	<tabTrigger>lamail</tabTrigger>
+	<Laravel 邮件></parameter>
+</snippet>

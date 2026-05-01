@@ -1,0 +1,31 @@
+<snippet>
+	<content><![CDATA[<?php
+
+use Illuminate\Database\Migrations\Migration;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Support\Facades\Schema;
+
+class Create${1:Users}Table extends Migration
+{
+    public function up()
+    {
+        Schema::create('${2:users}', function (Blueprint \$table) {
+            \$table->id();
+            \$table->string('${3:name}');
+            \$table->string('${4:email}')->unique();
+            \$table->timestamp('${5:email_verified_at}')->nullable();
+            \$table->string('${6:password}');
+            \$table->rememberToken();
+            \$table->timestamps();
+        });
+    }
+
+    public function down()
+    {
+        Schema::dropIfExists('${7:users}');
+    }
+}]]></content>
+	<scope>source.php</scope>
+	<tabTrigger>lamigration</tabTrigger>
+	<Laravel Migration></parameter>
+</snippet>

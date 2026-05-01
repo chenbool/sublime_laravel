@@ -1,0 +1,8 @@
+<snippet>
+	<content><![CDATA[return response()->streamDownload(function () {
+    echo '${1:content}';
+}, '${2:file}.txt');]]></content>
+	<scope>source.php</scope>
+	<tabTrigger>lastreamdownload</tabTrigger>
+	<Laravel 流下载></parameter>
+</snippet>

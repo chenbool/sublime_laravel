@@ -1,0 +1,43 @@
+<snippet>
+	<content><![CDATA[<?php
+
+namespace App\Observers;
+
+use App\Models\${1:User};
+
+class ${2:User}Observer
+{
+    public function creating(\$user)
+    {
+        //
+    }
+
+    public function created(\$user)
+    {
+        //
+    }
+
+    public function updating(\$user)
+    {
+        //
+    }
+
+    public function updated(\$user)
+    {
+        //
+    }
+
+    public function deleting(\$user)
+    {
+        //
+    }
+
+    public function deleted(\$user)
+    {
+        //
+    }
+}]]></content>
+	<scope>source.php</scope>
+	<tabTrigger>laobserver</tabTrigger>
+	<Laravel 观察者></parameter>
+</snippet>

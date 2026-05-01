@@ -1,0 +1,6 @@
+<snippet>
+	<content><![CDATA[DB::table('${1:users}')->where('${2:id}', ${3:1})->first();]]></content>
+	<scope>source.php</scope>
+	<tabTrigger>ladbtable</tabTrigger>
+	<Laravel DB 查询></parameter>
+</snippet>

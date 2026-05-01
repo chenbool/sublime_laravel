@@ -1,0 +1,10 @@
+<snippet>
+	<content><![CDATA[Route::middleware(['${1:auth}', '${2:web}'])->group(function () {
+    Route::get('/${3:dashboard}', function () {
+        //
+    });
+});]]></content>
+	<scope>source.php</scope>
+	<tabTrigger>laroutemiddleware</tabTrigger>
+	<Laravel 路由中间件></parameter>
+</snippet>

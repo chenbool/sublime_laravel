@@ -1,0 +1,23 @@
+<snippet>
+	<content><![CDATA[<?php
+
+namespace App\Exceptions;
+
+use Exception;
+
+class ${1:GeneralException} extends Exception
+{
+    public function report()
+    {
+        // 
+    }
+
+    public function render(\$request)
+    {
+        return response()->json(['error' => \$this->getMessage()], 400);
+    }
+}]]></content>
+	<scope>source.php</scope>
+	<tabTrigger>laexception</tabTrigger>
+	<Laravel 异常></parameter>
+</snippet>

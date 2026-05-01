@@ -1,0 +1,6 @@
+<snippet>
+	<content><![CDATA[Cache::put('${1:key}', ${2:\$value}, ${3:3600});]]></content>
+	<scope>source.php</scope>
+	<tabTrigger>lacacheput</tabTrigger>
+	<Laravel 缓存设置></parameter>
+</snippet>

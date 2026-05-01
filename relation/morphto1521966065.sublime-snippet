@@ -1,0 +1,9 @@
+<snippet>
+	<content><![CDATA[public function ${1:commentable}()
+{
+    return \$this->morphTo();
+}]]></content>
+	<scope>source.php</scope>
+	<tabTrigger>lamorphto</tabTrigger>
+	<Laravel 多态反向></parameter>
+</snippet>

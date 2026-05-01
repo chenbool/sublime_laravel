@@ -1,0 +1,8 @@
+<snippet>
+	<content><![CDATA[Route::name('${1:admin}.')->group(function () {
+    Route::get('/${2:dashboard}')->name('${3:dashboard}');
+});]]></content>
+	<scope>source.php</scope>
+	<tabTrigger>laroutename</tabTrigger>
+	<Laravel 路由命名></parameter>
+</snippet>

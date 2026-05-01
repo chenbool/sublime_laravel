@@ -1,0 +1,8 @@
+<snippet>
+	<content><![CDATA[${1:User}::firstOrCreate(['${2:email}' => '${3:email@example.com}'], [
+    '${4:name}' => '${5:John}',
+]);]]></content>
+	<scope>source.php</scope>
+	<tabTrigger>lafirstorcreate</tabTrigger>
+	<Laravel firstOrCreate></parameter>
+</snippet>

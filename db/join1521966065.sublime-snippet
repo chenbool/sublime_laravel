@@ -1,0 +1,7 @@
+<snippet>
+	<content><![CDATA[use Illuminate\Support\Facades\DB;
+DB::table('${1:users}')->join('${2:posts}', 'users.id', '=', 'posts.user_id')->select('users.*', 'posts.title')->get();]]></content>
+	<scope>source.php</scope>
+	<tabTrigger>lajoin</tabTrigger>
+	<Laravel JOIN查询></parameter>
+</snippet>

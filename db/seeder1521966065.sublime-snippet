@@ -1,0 +1,23 @@
+<snippet>
+	<content><![CDATA[<?php
+
+namespace Database\Seeders;
+
+use Illuminate\Database\Seeder;
+use Illuminate\Support\Facades\DB;
+
+class ${1:User}Seeder extends Seeder
+{
+    public function run()
+    {
+        DB::table('${2:users}')->insert([
+            'name' => '${3:Admin}',
+            'email' => '${4:admin@example.com}',
+            'password' => bcrypt('${5:password}'),
+        ]);
+    }
+}]]></content>
+	<scope>source.php</scope>
+	<tabTrigger>laseeder</tabTrigger>
+	<Laravel Seeder></parameter>
+</snippet>

@@ -1,0 +1,10 @@
+<snippet>
+	<content><![CDATA[use Illuminate\Support\Facades\DB;
+DB::transaction(function () {
+    \App\Models\User::create(['name' => 'test']);
+    \App\Models\Post::create(['title' => 'Hello']);
+});]]></content>
+	<scope>source.php</scope>
+	<tabTrigger>latransaction</tabTrigger>
+	<Laravel 事务></parameter>
+</snippet>

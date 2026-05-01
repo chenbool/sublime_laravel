@@ -1,0 +1,9 @@
+<snippet>
+	<content><![CDATA[Route::prefix('${1:api}')->group(function () {
+    Route::get('/${2:users}', '${3:UserController@index}');
+    Route::post('/${4:users}', '${5:UserController@store}');
+});]]></content>
+	<scope>source.php</scope>
+	<tabTrigger>larouteprefix</tabTrigger>
+	<Laravel 路由前缀></parameter>
+</snippet>

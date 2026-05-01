@@ -1,0 +1,8 @@
+<snippet>
+	<content><![CDATA[Route::get('/${1:home}', function () {
+    return '${2:Hello World}';
+});]]></content>
+	<scope>source.php</scope>
+	<tabTrigger>larouteget</tabTrigger>
+	<Laravel GET路由></parameter>
+</snippet>

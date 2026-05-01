@@ -1,0 +1,16 @@
+<snippet>
+	<content><![CDATA[<?php
+
+namespace App\Services;
+
+class ${1:UserService}
+{
+    public function getUser(\$id)
+    {
+        return \App\Models\User::find(\$id);
+    }
+}]]></content>
+	<scope>source.php</scope>
+	<tabTrigger>laservice</tabTrigger>
+	<Laravel Service></parameter>
+</snippet>

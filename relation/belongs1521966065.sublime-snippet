@@ -1,0 +1,9 @@
+<snippet>
+	<content><![CDATA[public function ${1:posts}()
+{
+    return \$this->belongsTo(\App\Models\${2:Post}::class, '${3:post_id}');
+}]]></content>
+	<scope>source.php</scope>
+	<tabTrigger>labelongs</tabTrigger>
+	<Laravel 属于></parameter>
+</snippet>

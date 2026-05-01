@@ -1,0 +1,32 @@
+<snippet>
+	<content><![CDATA[<?php
+
+namespace App\Events;
+
+use App\Models\Order;
+use Illuminate\Broadcasting\Channel;
+use Illuminate\Broadcasting\InteractsWithSockets;
+use Illuminate\Contracts\Broadcasting\ShouldBroadcast;
+use Illuminate\Foundation\Events\Dispatchable;
+use Illuminate\Queue\SerializesModels;
+
+class ${1:OrderShipped}
+{
+    use Dispatchable, InteractsWithSockets, SerializesModels;
+
+    public \$order;
+
+    public function __construct(Order \$order)
+    {
+        \$this->order = \$order;
+    }
+
+    public function broadcastOn()
+    {
+        return new Channel('orders');
+    }
+}]]></content>
+	<scope>source.php</scope>
+	<tabTrigger>laeventclass</tabTrigger>
+	<Laravel 事件类></parameter>
+</snippet>

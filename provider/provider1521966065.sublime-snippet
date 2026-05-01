@@ -1,0 +1,23 @@
+<snippet>
+	<content><![CDATA[<?php
+
+namespace App\Providers;
+
+use Illuminate\Support\ServiceProvider;
+
+class ${1:AppServiceProvider} extends ServiceProvider
+{
+    public function register()
+    {
+        //
+    }
+
+    public function boot()
+    {
+        //
+    }
+}]]></content>
+	<scope>source.php</scope>
+	<tabTrigger>laprovider</tabTrigger>
+	<Laravel 服务提供者></parameter>
+</snippet>

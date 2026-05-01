@@ -1,0 +1,22 @@
+<snippet>
+	<content><![CDATA[<?php
+
+namespace App\Console\Commands;
+
+use Illuminate\Console\Command;
+
+class ${1:SendEmails} extends Command
+{
+    protected \$signature = '${2:command:send_emails}';
+    protected \$description = '${3:Send emails to all users}';
+
+    public function handle()
+    {
+        \$this->info('${4:Command executed successfully}');
+        return 0;
+    }
+}]]></content>
+	<scope>source.php</scope>
+	<tabTrigger>lacommand</tabTrigger>
+	<Laravel Artisan命令></parameter>
+</snippet>

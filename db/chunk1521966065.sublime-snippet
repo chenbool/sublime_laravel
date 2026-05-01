@@ -1,0 +1,10 @@
+<snippet>
+	<content><![CDATA[${1:User}::chunk(${2:100}, function (\$users) {
+    foreach (\$users as \$user) {
+        //
+    }
+});]]></content>
+	<scope>source.php</scope>
+	<tabTrigger>lachunk</tabTrigger>
+	<Laravel 分块处理></parameter>
+</snippet>

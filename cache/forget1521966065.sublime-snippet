@@ -1,0 +1,6 @@
+<snippet>
+	<content><![CDATA[Cache::forget('${1:key}');]]></content>
+	<scope>source.php</scope>
+	<tabTrigger>lacacheforget</tabTrigger>
+	<Laravel 缓存删除></parameter>
+</snippet>

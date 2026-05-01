@@ -1,0 +1,22 @@
+<snippet>
+	<content><![CDATA[<?php
+
+namespace App\Http\Resources;
+
+use Illuminate\Http\Resources\Json\JsonResource;
+
+class ${1:UserResource} extends JsonResource
+{
+    public function toArray(\$request)
+    {
+        return [
+            'id' => \$this->id,
+            'name' => \$this->name,
+            'email' => \$this->email,
+        ];
+    }
+}]]></content>
+	<scope>source.php</scope>
+	<tabTrigger>laresource</tabTrigger>
+	<Laravel Resource></parameter>
+</snippet>
